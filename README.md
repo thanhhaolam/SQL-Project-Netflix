@@ -256,7 +256,7 @@ where movie_type = 'Movie' and country = 'India';
 select * from netflix_dataset
 where lower(movie_description) like '%kill%' or '%violence%';
 ```
-## FINDING: 
+## FINDINGS: 
 - Content Distribution: The dataset includes a varied selection of movies and television series with various ratings and genres
 - Ratings: help you determine the content's intended demographic
 - Geographical Insights: The top nations and average content releases from India demonstrate regional content dispersion
