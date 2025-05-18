@@ -34,7 +34,7 @@ Explore and categorize content based on specific criteria and keywords.
   group by 2;
 ```
 
-### Problem 2: 2. Find the Most Common Rating for Movies and TV 
+### Problem 2: Find the Most Common Rating for Movies and TV 
 - *Objective:* Identify the most frequently occurring rating for each type of content.
 ```sql
 SELECT movie_type, rating
