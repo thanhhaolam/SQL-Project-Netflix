@@ -9,7 +9,7 @@ Explore and categorize content based on specific criteria and keywords.
 - The data is collected on Kaggle [dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
 ## Analysis
 ### Create table
-'''sql
+"'sql
   drop table if exists netflix_dataset;
   create table netflix_dataset
   (
@@ -25,7 +25,7 @@ Explore and categorize content based on specific criteria and keywords.
   duration varchar(10),
   listed_in varchar(80),
   movie_description varchar(250));
-'''
+'"
 
 ### Problem 1: Count the Number of Movies vs TV Shows
 *Objective:* Determine the distribution of content types on Netflix.
