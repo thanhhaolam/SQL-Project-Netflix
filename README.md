@@ -10,27 +10,27 @@ Explore and categorize content based on specific criteria and keywords.
 ## Analysis
 ### Create table
 '''sql
-drop table if exists netflix_dataset;
-create table netflix_dataset
-(
-show_id varchar(10) primary key,
-movie_type varchar(7),
-title varchar(110),
-director varchar(210),
-cast varchar(780),
-country varchar(130),
-date_added varchar(80),
-release_year int,	
-rating varchar(10),
-duration varchar(10),
-listed_in varchar(80),
-movie_description varchar(250));
+  drop table if exists netflix_dataset;
+  create table netflix_dataset
+  (
+  show_id varchar(10) primary key,
+  movie_type varchar(7),
+  title varchar(110),
+  director varchar(210),
+  cast varchar(780),
+  country varchar(130),
+  date_added varchar(80),
+  release_year int,	
+  rating varchar(10),
+  duration varchar(10),
+  listed_in varchar(80),
+  movie_description varchar(250));
 '''
 
 ### Problem 1: Count the Number of Movies vs TV Shows
 - Objective: Determine the distribution of content types on Netflix.
 '''sql
-select count(show_id), movie_type from netflix_dataset
-group by 2;
+  select count(show_id), movie_type from netflix_dataset
+  group by 2;
 '''
 
