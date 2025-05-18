@@ -28,9 +28,10 @@ Explore and categorize content based on specific criteria and keywords.
 '''
 
 ### Problem 1: Count the Number of Movies vs TV Shows
-- Objective: Determine the distribution of content types on Netflix.
+*Objective:* Determine the distribution of content types on Netflix.
 '''sql
   select count(show_id), movie_type from netflix_dataset
   group by 2;
 '''
+
 
