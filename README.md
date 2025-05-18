@@ -219,12 +219,6 @@ where upper(cast) like '%Julie Delpy%'
 ### Problem 14: 14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India
 - *Objective:* Identify the top 10 actors with the most appearances in Indian-produced movies.
 ```sql
--- where upper(cast) like '%Julie Delpy%'
--- 	And str_to_date(date_added, '%M %d, %y') > DATE_SUB(current_date(), INTERVAL 10 year);
-
-
--- 14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India
-drop table if exists new_actor;
 create temporary table new_actor AS (
   select 1 as n
   union select 2
